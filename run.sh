@@ -6,5 +6,9 @@ python train.py --task_dir=KG_Data/WN18 --optim=adagrad --lamb=0.000282 --lr=0.3
 
 # 5.3
 CUDA_VISIBLE_DEVICES=1 nohup python -u train.py --task_dir=KG_Data/WN18RR --optim=adagrad --lamb=0. --lr=0.7 --n_epoch=200 --n_dim=64 --n_batch=512 --epoch_per_test=40 --test_batch_size=50 --thres=0.0 --decay_rate=0.9915589 --parrel=4 &> log/try_wn.out &
+nohup python -u train.py --task_dir=KG_Data/medical --optim=adagrad --lamb=0. --lr=0.7 --n_epoch=200 --n_dim=64 --n_batch=80 --epoch_per_test=40 --test_batch_size=50 --thres=0.0 --decay_rate=0.9915589 --parrel=4 &> log/try_medical.out &
+nohup python -u train.py --task_dir=KG_Data/medical_big --optim=adagrad --lamb=0. --lr=0.7 --n_epoch=200 --n_dim=64 --n_batch=512 --epoch_per_test=40 --test_batch_size=50 --thres=0.0 --decay_rate=0.9915589 --parrel=4 &> log/try_medical_big.out &
+nohup python -u train.py --task_dir=KG_Data/kb2e --optim=adagrad --lamb=0. --lr=0.7 --n_epoch=200 --n_dim=64 --n_batch=512 --epoch_per_test=40 --test_batch_size=50 --thres=0.0 --decay_rate=0.9915589 --parrel=4 &> log/try_kb2e.out &
+nohup python -u train.py --task_dir=KG_Data/military --optim=adagrad --lamb=0. --lr=0.7 --n_epoch=200 --n_dim=64 --n_batch=512 --epoch_per_test=40 --test_batch_size=50 --thres=0.0 --decay_rate=0.9915589 --parrel=4 &> log/try_kb2e.out &
 
 
