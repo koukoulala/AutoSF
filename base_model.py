@@ -65,7 +65,7 @@ class BaseModel(object):
                 # output performance 
                 valid_mrr, valid_mr, valid_10 = tester_val()
                 test_mrr,  test_mr,  test_10 = tester_tst()
-                out_str = '%.4f\t%.4f\t\t%.4f\t%.4f\t%.4f\n'%(valid_mrr, valid_10, test_mrr, test_10, test_mr)
+                out_str = '%.4f\t\t%.4f\t%.4f\t%.4f\n'%(epoch + 1, test_mr, test_mrr, test_10)
 
                 # output the best performance info
                 if valid_mrr > best_mrr:
