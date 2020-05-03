@@ -75,7 +75,7 @@ def run_model(i, state):
 if __name__=='__main__':
     os.environ["OMP_NUM_THREADS"] = "5"
     os.environ["MKL_NUM_THREADS"] = "5"
-    mp.set_start_method('forkserver')
+    #mp.set_start_method('forkserver')
 
     state_obj = StateSpace()
     T = 32                  # train for 1000 iterations
